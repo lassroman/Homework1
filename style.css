@@ -6,8 +6,9 @@
 a{
     text-decoration: none;
 }
+
 body{
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .center{
@@ -57,6 +58,9 @@ body{
     background: #9C0332;
     width: 234px;
     height: 48px;
+}
+
+.top__button_go{
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 400;
@@ -75,47 +79,21 @@ body{
     padding-top: 128px;
 }
 
-.main__section_first{
+.main__section{
     width: 379px;
     height: 300px;
-    flex-shrink: 0;
     border-radius: 16px;
-    background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(img/game1.jpg), lightgray 50% / cover no-repeat;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    flex-shrink: 0;
 }
 
-.main__section_second{
-    width: 379px;
-    height: 300px;
-    flex-shrink: 0;
-    border-radius: 16px;
-    background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(img/game2.jpg), lightgray 50% / cover no-repeat;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.main__section_third{
-    width: 379px;
-    height: 300px;
-    flex-shrink: 0;
-    border-radius: 16px;
-    background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(img/game3.jpg), lightgray 50% / cover no-repeat;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-
-.main__item{
+.gametext{
+    position: absolute;
     color: #FFF;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: 32px;
-    padding-left: 32px;
-    padding-bottom: 32px;
     padding-top: 236px;
+    padding-left: 32px;
+    box-sizing: border-box;
 }
