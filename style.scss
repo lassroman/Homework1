@@ -1,0 +1,102 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center{
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.top{
+    height: 1024px;
+    max-width: 1440px;
+    background-image: url(img/bcgr_top.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__text{
+        padding-top: 218px;
+    }
+    &__heading{
+        color: #FFF;
+        font-size: 64px;
+        font-weight: 700;
+        margin-bottom: 32px;
+    }
+    &__par{
+        width: 430px;
+        color: #FFF; 
+        font-style: normal;
+        font-weight: 300;
+        margin-bottom: 44px;
+        &_tag{
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 32px;
+        }
+    }
+    &__button_go{
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 400;
+        padding-left: 74px;
+        padding-right: 74px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        box-sizing: border-box;
+        border-radius: 30px;
+        background: #9C0332;
+        width: 234px;
+        height: 48px;
+        &:hover{
+            transform: scale(1.05);
+            transition: all .3s;
+            box-shadow: 0 0 5px #ccc;
+        }
+    }
+}
+
+.main{
+    max-width: 1440px;
+    height: 556px;
+    background: #000915;
+    display: flex;
+    gap: 32px;
+    padding-top: 128px;
+    &__section{
+        width: 379px;
+        height: 300px;
+        border-radius: 16px;
+        flex-shrink: 0;
+        &:hover{
+                transform: scale(1.05);
+                transition: all .3s;
+                box-shadow: 0 0 5px #44D2FF;
+        }       
+    }
+}
+
+
+.gametext{
+    position: absolute;
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    padding-top: 236px;
+    padding-left: 32px;
+    box-sizing: border-box;
+}
+
+@import 'mobile';
