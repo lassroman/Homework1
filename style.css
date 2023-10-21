@@ -67,11 +67,11 @@ body {
 
 .main {
   max-width: 1440px;
-  height: 556px;
   background: #000915;
   display: flex;
   gap: 32px;
   padding-top: 128px;
+  padding-bottom: 128px;
 }
 .main__section {
   width: 379px;
@@ -95,6 +95,41 @@ body {
   padding-top: 236px;
   padding-left: 32px;
   box-sizing: border-box;
+}
+
+.seasons {
+  max-width: 1440px;
+  height: 556px;
+  background: #000915;
+  padding-top: 234px;
+}
+.seasons__section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 131px;
+}
+.seasons__text {
+  padding-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.seasons__text_title {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+}
+.seasons__text_par {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  width: 584px;
+}
+.seasons__picture {
+  width: 485px;
+  height: 333px;
+  flex-shrink: 0;
 }
 
 @media (max-width: 767px) {
@@ -130,6 +165,7 @@ body {
     justify-content: center;
     height: 1221px;
     padding-top: 0;
+    padding-bottom: 0;
   }
   .main__section {
     max-width: 343px;
@@ -137,6 +173,40 @@ body {
   .main__section_img {
     width: 100%;
     height: 300px;
+  }
+  .seasons {
+    padding-top: 0px;
+    height: 654px;
+  }
+  .seasons__section {
+    gap: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .seasons__picture {
+    max-width: 344px;
+    height: 236px;
+    flex-shrink: 0;
+  }
+  .seasons__picture_pic {
+    width: 100%;
+  }
+  .seasons__text {
+    width: 100%;
+    align-items: center;
+  }
+  .seasons__text_title {
+    text-align: center;
+    font-size: 32px;
+  }
+  .seasons__text_par {
+    width: 343px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
   }
 }
 @media (max-width: 1023px) {
@@ -161,6 +231,26 @@ body {
     height: 1221px;
     padding-top: 0;
   }
+  .seasons {
+    height: 800px;
+    padding-top: 100px;
+  }
+  .seasons__section {
+    gap: 100px;
+    justify-content: center;
+  }
+  .seasons__text {
+    align-items: center;
+  }
+  .seasons__text_par {
+    text-align: center;
+  }
+  .seasons__picture {
+    width: 550px;
+  }
+  .seasons__picture_pic {
+    width: 100%;
+  }
 }
 @media (max-width: 374px) {
   .main {
@@ -173,5 +263,9 @@ body {
   .main__section_img {
     width: 100%;
     height: 300px;
+  }
+  .seasons {
+    height: 600px;
+    padding-top: 0;
   }
 }/*# sourceMappingURL=style.css.map */
