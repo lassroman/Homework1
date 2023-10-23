@@ -67,22 +67,20 @@ ask();
 
 // Задача 7
 function getArea() {
-    return (this.P * (this.radius**2));
+    return (Math.PI  * (this.radius**2));
 }
 function getPerimeter() {
-    return (2 * this.P * this.radius);
+    return (2 * Math.PI  * this.radius);
 }
 
 let circle1 = {
-    raduis: Number(6),
-    P: Number(3.14),
+    raduis: 6,
     getArea: getArea,
     getPerimeter: getPerimeter,
 };
 
 let circle2 = {
     radius: 20,
-    P: 3.14,
     getArea: getArea,
     getPerimeter: getPerimeter,
 };
