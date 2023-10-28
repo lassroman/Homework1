@@ -62,7 +62,7 @@ console.log(`'${arrStr}'`);
 
 // Задача 9
 let arr3 = [[1, 2, 3,],[4, 5, 6]];
-console.log(arr.flat());
+console.log(arr3.flat());
 
 // Задача 10
 function plus() {
@@ -79,9 +79,9 @@ function squareArray(arr) {
 
 // Задача 12
 function getLengthWords(arr) {
-    let getLengthWords = ['слово', '', 'слог', 'длинное предложение', 'буква'];
-    return arr.map(x => x.length);
+    return arr.map(word => word.length);
 }
+getLengthWords(['слово', '', 'слог', 'длинное предложение', 'буква']);
 
 // Задача 13
 function filterPositive(array) {
