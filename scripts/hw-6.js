@@ -20,7 +20,7 @@ console.log(arrNumber2.indexOf(4));
 // }
 // console.log(result);
 
-// Задача 3
+// Задача 3 вывести элеманты через пробел
 const arr = [1, 3, 5, 10, 20];
 const result = arr.join(' ');
 console.log(result);
@@ -55,16 +55,16 @@ if (arrLuck.includes(Number(guess))) {
   alert('Не угадал');
 }
 
-// Задача 8
+// Задача 8 
 let str = 'abcdef';
 let arrStr = str.split('').reverse().join('');
 console.log(`'${arrStr}'`);
 
-// Задача 9
+// Задача 9 вывести [1, 2, 3, 4, 5, 6]
 let arr3 = [[1, 2, 3,],[4, 5, 6]];
 console.log(arr3.flat());
 
-// Задача 10
+// Задача 10 перебрать массив и вывести сумму текущего и след эл-та
 function plus() {
     let arr4 = [4, 7, 2, 8, 0, 3];
     for (let i = 0; i < arr4.length - 1; i++) {
@@ -72,18 +72,18 @@ function plus() {
     }
 }
 
-// Задача 11
+// Задача 11 принимает целое и возврат квадрата
 function squareArray(arr) {
     return arr.map(x => x ** 2);
 }
 
-// Задача 12
+// Задача 12 принимает строки и возвращает длину слова
 function getLengthWords(arr) {
     return arr.map(word => word.length);
 }
 getLengthWords(['слово', '', 'слог', 'длинное предложение', 'буква']);
 
-// Задача 13
+// Задача 13 принимает массив целых и возвращает только отрицательные
 function filterPositive(array) {
     return array.filter(x => x < 0);
 }
