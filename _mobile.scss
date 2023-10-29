@@ -53,6 +53,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            padding-top: 0px;
+            padding-bottom: 0px;
         }
         &__picture{
             max-width: 344px;
@@ -65,6 +67,42 @@
         &__text{
             width: 100%;
             align-items: center;
+            &_title{
+                text-align: center;
+                font-size: 32px;
+            }
+            &_par{
+                width: 343px;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 22px;
+                text-align: center;
+            }
+        }
+    }
+    .words{
+        height: 654px;
+        &__section{
+            gap: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            flex-direction: column-reverse;
+        }
+        &__picture{
+            max-width: 344px;
+            height: 236px;
+            flex-shrink: 0;
+            &_pic{
+                width: 100%;
+            }
+        }
+        &__text{
+            width: 100%;
+            align-items: center;
+            padding-left: 0px;
             &_title{
                 text-align: center;
                 font-size: 32px;
@@ -107,13 +145,39 @@
     }
     .seasons{
         height: 800px;
+        &__section{
+            gap: 100px;
+            justify-content: center;
+            padding-top: 0px;
+        }
+        &__text{
+            align-items: center;
+            &_par{
+                text-align: center;
+            }
+        }
+        &__picture{
+            width: 550px;
+            &_pic{
+                width: 100%;
+            }
+        }
+    }
+
+    .words {
+        height: 800px;
         padding-top: 100px;
         &__section{
             gap: 100px;
             justify-content: center;
+            padding-bottom: 0px;
+            padding-top: 0px;
+            flex-direction: column-reverse;
+            align-content: center;
         }
         &__text{
             align-items: center;
+            padding-left: 0px;
             &_par{
                 text-align: center;
             }
