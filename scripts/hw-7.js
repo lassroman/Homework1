@@ -28,7 +28,7 @@ console.log(minNumber);
 
 // Task 5 рандомное число от 0 до 10
 function getRandomInt( minValue, maxValue) {
-    return Math.round(Math.random() * maxValue);
+    return Math.round(Math.random() * maxValue) + minValue;
 }
 console.log(getRandomInt(0, 10));
 
@@ -43,13 +43,13 @@ function getRandomArrNumbers(n) {
 console.log(getRandomArrNumbers(7));
 console.log(getRandomArrNumbers(12));
 
-// Task 7 возвращает целое в диапазоне 2х чисел
+// Task 7 возвращает рандомное целое в диапазоне 2х чисел
 function getRandomInt(minValue, maxValue) {
     return Math.round(Math.random() * (maxValue - minValue)) + minValue;
 }
-    console.log(getRandomInt(5, 10));
+console.log(getRandomInt(5, 10));
 
-// Task 8 вывести текущую дату
+// Task 8 вывести текущую дату  
 let currentDate = new Date();
 console.log(currentDate);
 
@@ -58,5 +58,12 @@ const theDate = new Date();
 theDate.setDate(theDate.getDate() + 73);
 console.log(theDate);
 
-// Task 10
+// Task 10 !принимает дату и возвращает ее в виде!
+function taskDate(date) {
+const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+    return `Дата: ${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()} - это ${days[date.getDay()]}
+    Время: ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+ }
+ console.log(taskDate(new Date()));
 
