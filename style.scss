@@ -101,13 +101,15 @@ body{
 
 .seasons{
     max-width: 1440px;
-    height: 556px;
+    height: 800px;
     background: #000915;
-    padding-top: 234px;
+    
     &__section{
         display: flex;
         flex-wrap: wrap;
         gap: 131px;
+        padding-top: 234px;
+        padding-bottom: 234px;
     }
     &__text{
         padding-top: 48px;
@@ -133,5 +135,41 @@ body{
         flex-shrink: 0;
     }
 }
+
+.words {
+    max-width: 1440px;
+    height: 800px;
+    background: #000915;
+    &__section{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 234px;
+        padding-bottom: 234px;
+    }
+    &__text{
+        padding-top: 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding-left: 135px;
+        &_title{
+            color: #FFF;
+            font-size: 48px;
+            font-weight: 700;
+        }
+        &_par{
+            color: #FFF;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 32px;
+            width: 584px;
+        }
+    }
+    &__picture{
+        width: 481px;
+        height: 322px;
+        flex-shrink: 0;
+    }
+}    
 
 @import 'mobile';

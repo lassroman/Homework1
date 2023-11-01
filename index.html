@@ -21,7 +21,7 @@
     </div>
     <div class="main center"> <a name="games"></a>
             <a class="main__section" href="#game1"><span class="gametext">Игра 1</span><img class="main__section_img" src="img/game1.svg" alt="game1"></a>
-            <a class="main__section" href="#"><span class="gametext">Игра 2</span><img class="main__section_img" src="img/game2.svg" alt="game2"></a>
+            <a class="main__section" href="#game2"><span class="gametext">Игра 2</span><img class="main__section_img" src="img/game2.svg" alt="game2"></a>
             <a class="main__section" href="#"><span class="gametext">Игра 3</span><img class="main__section_img" src="img/game3.svg" alt="game3"></a>
     </div>
     <div class="seasons center"> <a name="game1"></a>
@@ -29,11 +29,21 @@
             <div class="seasons__text">
                 <h2 class="seasons__text_title">Времена года!</h2>
                 <p class="seasons__text_par">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
-                <a class="top__button_go" href="#" onclick="monthNumber();">Играть!</a>
+                <button class="top__button_go"  onclick="monthNumber();">Играть!</button>
             </div>
             <div class="seasons__picture"><img class="seasons__picture_pic" src="img/seasons1.png" alt="seasons_game"></div>
         </div>
     </div>
-    <script src="game1.js"></script>
+    <div class="words center">
+        <div class="words__section"><a name="game2"></a>
+            <div class="words__picture"><img class="words__picture_pic" src="img/words2.png" alt="words_game"></div>
+            <div class="words__text">
+                <h2 class="words__text_title">Запомни слова </h2>
+                <p class="words__text_par">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
+                <button class="top__button_go"  onclick="fruits();">Играть!</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
